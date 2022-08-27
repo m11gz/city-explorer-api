@@ -2,6 +2,7 @@
 
 const express = require('express');
 const cors = require('cors');
+const axios = require('axios');
 
 require('dotenv').config();
 
@@ -16,15 +17,14 @@ app.get('/', (request, response) => {
   response.send('Hello there!');
 });
 
-app.get('/weather', (request, response, next) => {
+app.get('/weather', async (request, response, next) => {
   console.log(request.query.city_name);
   try {
-    let cityQuery = request.query.city_name;
-    console.log(cityQuery);
-    let weatherObj = data.find(
-      (city) => city.city_name.toLowerCase() === cityQuery.toLowerCase()
+    let lat = request.query.lat;
+    let lon = request.query.lon;
+    let weatherObj = await axios.get(
+      `http://api.weatherbit.io/v2.0/forecast/daily?key=${process.env.REACT_APP_WEATHER_API_KEY}&lat=${lat}&lon=${lon}&units=I&days=3`
     );
-    console.log(weatherObj.data);
     let selectedCity = weatherObj.data.map((day) => new Forecast(day));
     response.send(selectedCity);
   } catch (err) {
