@@ -25,3 +25,6 @@ class Forecast {
 }
 
 module.exports = getWeather;
+
+
+

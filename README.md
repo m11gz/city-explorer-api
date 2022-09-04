@@ -1,22 +1,42 @@
-# city-explorer-api
+# Project Name City Explorer
 
-Author: Miguel Rodriguez Version: 1.0.0
+**Author**: Miguel Rodriguez
+**Version**: 2.0.0 
 
-Lab 07 City Explorer
-Name of feature: City explorer (Asynch)
+## Overview
 
-Estimate of time needed to complete: 6 - 8 hrs
+This really cool website lets you see the current weather as well as see movies that fit the city name. 
 
-Start time: 5PM
+## Architecture
 
-Finish time: **\_**
+Built using Heroku, Express, Cors, and Axios. 
 
-Actual time needed to complete: **\_**
+## Change Log
 
-Getting Started
-Architecture
-I will be using HTML, CSS, JavaScript, Bootstrap, and React.
+Last added feature was movies.js
+weather api
+movie api added
+Modulated Back endserver
 
-Change Log
-Credit and Collaborations
-Jordan Yamada and Alfredo Orquiz helped me understand the code better, as well as understand what is being asked from the Trello Checklist.
+
+## Credit and Collaborations
+
+collabed with Jordan Yamda.
+
+## Lab 7-10
+Name of feature: Bootstrap, Weather and Movie API, Refactor 
+
+Estimate of time needed to complete: 2 hour
+
+Start time: 12 PM
+
+Finish time: 9 PM
+
+Actual time needed to complete: 4 Days
+
+
+
+![Lab07](./src/images/Lab08-WhiteBoard.png)
+![Lab08](./src/images/Lab07-WhiteBoard.png)
+![Lab09](./src/images/Lab09-WhiteBoard.png)
+![Lab10](./src/images/Lab10-WhiteBoard.png)

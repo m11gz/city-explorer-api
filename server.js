@@ -4,6 +4,7 @@ const express = require('express');
 const cors = require('cors');
 // const axios = require('axios');
 const weatherHandler = require('./weather.js');
+const moviesHandler = require('./movies');
 
 require('dotenv').config();
 
@@ -19,6 +20,7 @@ app.get('/', (request, response) => {
 });
 
 app.get('/weather', weatherHandler);
+app.get('/movies', moviesHandler);
 
 // app.get('/weather', async (request, response, next) => {
 //   console.log(request.query.city_name);
