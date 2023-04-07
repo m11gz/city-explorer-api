@@ -21,7 +21,7 @@ Modulated Back endserver
 
 ## Credit and Collaborations
 
-collabed with Jordan Yamda.
+
 
 ## Lab 7-10
 Name of feature: Bootstrap, Weather and Movie API, Refactor 
